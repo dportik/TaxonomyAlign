@@ -1,2 +1,5 @@
 # TaxonomyAlign
  Taxonomy-guided multiple sequence alignment for difficult genes, including 12S and 16S rRNA.
+
+
+Use to perform multiple sequence alignment for a highly variable gene and a large number of divergent sequences. `TaxonomyAlign` automatically divides the sequences into smaller subsets based on user-supplied taxonomic groupings, and builds sub-alignments for the groups using MAFFT (several algorithm options available). The defined groupings should be related to both taxonomy and phylogeny (e.g., genus, family, superfamily, etc). The resulting sub-alignments are then merged together with MAFFT, with or without an optional polishing step. The original use-case was for creating high-quality alignments from many 12S and 16S mtDNA sequences across a large phylogenetic scale. However, `TaxonomyAlign` should prove useful for other genes with many species and divergent sequences to align.
