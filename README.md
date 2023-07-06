@@ -193,7 +193,7 @@ This directory contains the aligned outputs of the group-specific fasta files. T
 
 `3-Merged-Alignments/`
 
-This directory contains the main outputs of interest.
+This directory contains the final outputs.
 
 - `Merged-alignment.fasta`: This is the final alignment produced by TaxonomyAlign, and the main output file of interest.
 
