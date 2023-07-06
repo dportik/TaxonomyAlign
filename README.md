@@ -42,6 +42,7 @@ conda activate taxonomyalign
 
 You can then run **TaxonomyAlign** in this environment. 
 
+
 ## Citation
 
 **TaxonomyAlign** publication coming soon.
@@ -50,6 +51,8 @@ You can then run **TaxonomyAlign** in this environment.
 ## Instructions for Analyses
 
 **TaxonomyAlign** provides an alternative to other alignment methods. It uses taxonomy-guided multiple sequence alignment for difficult genes. It was designed for large-scale 12S and 16S rRNA alignments for vertebrates (>3,000 sequences). However, it should prove useful for other genes with many species and divergent sequences to align. 
+
+Example datasets are provided in the [example data folder](https://github.com/dportik/TaxonomyAlign/tree/main/example-data). There are two fasta files containing either 12S or 16S sequences, for all frogs. The map file (`Anura-Family-Map-File.txt`) can be used with either file to run the analysis.
 
 
 ### Quick Navigation for Instructions:
