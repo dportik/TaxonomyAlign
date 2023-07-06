@@ -181,47 +181,30 @@ output_dir/
 └── Taxonomy-Align_Aug-06-2022_12.16.14.log
 ```
 
-`1-Group-Fasta-Files/`:
+`1-Group-Fasta-Files/`
 
 This directory will contain fasta files for each grouping included in the map file. The `multiples` or `singleton` component of the name signify whether the file contains >= 2 sequences (`multiples`) or a single sequence (`singleton`). The `multiples` files are individually aligned in the next step. The `singleton` files only contain one sequence and they are aligned during the final sub-alignment merging step.
 
 
-`2-Group-Alignments/`:
+`2-Group-Alignments/`
 
 This directory contains the aligned outputs of the group-specific fasta files. The associated log files show the MAFFT progress.
 
 
-`3-Merged-Alignments/`:`
+`3-Merged-Alignments/`
 
 This directory contains the main outputs of interest.
 
-- `Merged-alignment.fasta`
-
-**This is the final alignment produced by TaxonomyAlign, and the main output file of interest.**
+- `Merged-alignment.fasta`: This is the final alignment produced by TaxonomyAlign, and the main output file of interest.
 
 
-- `Merge-Table.txt`
-
-This MAFFT-specific file contains information about how the group merging was conducted. It is used in conjunction with the `Sub-Alignments.fasta` file.
-
-Example contents:
-```
-1 2 # Group = Allophrynidae
-3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 # Group = Alsodidae
-24 25 26 27 28 29 30 31 32 33 34 # Group = Alytidae
-35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 # Group = Arthroleptidae
-96 97 98 99 100 101 # Group = Batrachylidae
-```
+- `Merge-Table.txt`: This MAFFT-specific file contains information about how the group merging was conducted. It is used in conjunction with the `Sub-Alignments.fasta` file.
 
 
-- `Merged-alignment.log`
-
-Contains all of the MAFFT alignment progress reports. If using `--verbose`, this will also appear on the screen. 
+- `Merged-alignment.log`: Contains all of the MAFFT alignment progress reports. If using `--verbose`, this will also appear on the screen. 
 
 
-- `Sub-Alignments.fasta`
-
-A concatenated sub-alignments fasta file that is specific to MAFFT. It is used in conjunction with the `Merge-Table.txt` file.
+- `Sub-Alignments.fasta`: A concatenated sub-alignments fasta file that is specific to MAFFT. It is used in conjunction with the `Merge-Table.txt` file.
 
 
 ## License
