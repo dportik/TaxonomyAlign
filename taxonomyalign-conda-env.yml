@@ -1,0 +1,10 @@
+# USAGE: conda env create -f supercrunch-conda-env.yml
+name: taxonomyalign
+channels:
+- bioconda
+- conda-forge
+- defaults
+dependencies:
+- python=3.7
+- biopython=1.77
+- mafft=7.475
