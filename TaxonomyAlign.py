@@ -12,8 +12,8 @@ def get_args():
     Get arguments from command line.
     """
     parser = argparse.ArgumentParser(
-            description="""Taxonomy-Guided-Alignment: Use to perform multiple sequence alignment for a highly variable gene 
-            and a large number of divergent sequences from many species. This program automatically divides the sequences 
+            description="""TaxonomyAlign: Use to perform multiple sequence alignment for a highly variable gene 
+            and a large number of divergent sequences. This program automatically divides the sequences 
             into smaller subsets based on user-supplied taxonomic groupings, and builds sub-alignments for the groups using MAFFT 
             (several algorithm options available). The defined groupings should be related to both taxonomy and phylogeny (e.g., genus, 
             family, superfamily, etc). The resulting sub-alignments are then merged together with MAFFT, with or without an optional 
