@@ -1,7 +1,7 @@
 ![TaxonomyAlign Logo](https://github.com/dportik/TaxonomyAlign/blob/main/TaxonomyAlign-Logo.png)
 
 
-Taxonomy-guided multiple sequence alignment for difficult genes, including 12S and 16S rRNA.
+Taxonomy-guided multiple sequence alignment for difficult genes, including 12S and 16S mitochondrial rRNA.
 
 
 ---------------
