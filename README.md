@@ -46,14 +46,6 @@ You can then run **TaxonomyAlign** in this environment.
 
 **TaxonomyAlign** publication coming soon.
 
-## License
-
-GNU Lesser General Public License v3.0
-
-## Contact and Bug Reporting
-
-**TaxonomyAlign** is written and maintained by Daniel Portik. If you experience any problems running **TaxonomyAlign**, or have questions, please open an issue [here](https://github.com/dportik/TaxonomyAlign/issues).
-
 
 ## Instructions for Analyses
 
@@ -69,7 +61,7 @@ GNU Lesser General Public License v3.0
 
 ### 1. Create a taxonomy map file <a name="OLTP"></a>
 
-This is a tab-delimited text file with two columns. The first column should contain the name of the taxon/sequence. The second column should contain the taxonomic group name that the taxon is a part of. This could be genus, family, or higher rank. For frogs, I used family level groupings. An example of this is shown below, and the full file can be found in the [example data folder](https://github.com/dportik/TaxonomyAlign/tree/main/test-data/inputs).
+This is a tab-delimited text file with two columns. The first column should contain the name of the taxon/sequence. The second column should contain the taxonomic group name that the taxon is a part of. This could be genus, family, or higher rank. For frogs, I used family level groupings. An example of this is shown below, and the full file can be found in the [example data folder](https://github.com/dportik/TaxonomyAlign/tree/main/example-data).
 
 ```
 Semnodactylus_wealii	Hyperoliidae
@@ -186,26 +178,26 @@ output_dir/
 └── Taxonomy-Align_Aug-06-2022_12.16.14.log
 ```
 
-#### `1-Group-Fasta-Files/`
+`1-Group-Fasta-Files/`:
 
 This directory will contain fasta files for each grouping included in the map file. The `multiples` or `singleton` component of the name signify whether the file contains >= 2 sequences (`multiples`) or a single sequence (`singleton`). The `multiples` files are individually aligned in the next step. The `singleton` files only contain one sequence and they are aligned during the final sub-alignment merging step.
 
 
-#### `2-Group-Alignments/`
+`2-Group-Alignments/`:
 
 This directory contains the aligned outputs of the group-specific fasta files. The associated log files show the MAFFT progress.
 
 
-#### `3-Merged-Alignments/`
+`3-Merged-Alignments/`:`
 
 This directory contains the main outputs of interest.
 
-##### `Merged-alignment.fasta`
+- `Merged-alignment.fasta`
 
-This is the final alignment produced by TaxonomyAlign.
+**This is the final alignment produced by TaxonomyAlign, and the main output file of interest.**
 
 
-##### `Merge-Table.txt`
+- `Merge-Table.txt`
 
 This MAFFT-specific file contains information about how the group merging was conducted. It is used in conjunction with the `Sub-Alignments.fasta` file.
 
@@ -219,14 +211,27 @@ Example contents:
 ```
 
 
-##### `Merged-alignment.log`
+- `Merged-alignment.log`
 
 Contains all of the MAFFT alignment progress reports. If using `--verbose`, this will also appear on the screen. 
 
 
-##### `Sub-Alignments.fasta`
+- `Sub-Alignments.fasta`
 
 A concatenated sub-alignments fasta file that is specific to MAFFT. It is used in conjunction with the `Merge-Table.txt` file.
+
+
+## License
+
+GNU Lesser General Public License v3.0
+
+## Contact and Bug Reporting
+
+**TaxonomyAlign** is written and maintained by Daniel Portik. 
+
+If you experience any problems running **TaxonomyAlign**, or have questions, please open an issue [here](https://github.com/dportik/TaxonomyAlign/issues).
+
+
 
 
 
