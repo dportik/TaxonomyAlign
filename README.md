@@ -48,7 +48,7 @@ You can then run **TaxonomyAlign** in this environment.
 
 **TaxonomyAlign** was introduced in the following publication:
 
-Portik, D.M., Streicher, J.W., and J.J. Wiens. 2023. Frog phylogeny: a time-calibrated, species-level tree based on hundreds of loci and 5,242 species. Molecular Phylogenetics and Evolution, Online Early.
+Portik, D.M., Streicher, J.W., and J.J. Wiens. 2023. Frog phylogeny: a time-calibrated, species-level tree based on hundreds of loci and 5,242 species. Molecular Phylogenetics and Evolution, 188: 107907.
 
 Please cite this work if you are using **TaxonomyAlign** for a publication.
 
